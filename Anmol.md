@@ -4,21 +4,21 @@
 
 </div>
 
-```
+```bash
 export ZONE=$(gcloud compute project-info describe \
 --format="value(commonInstanceMetadata.items[google-compute-default-zone])")
 gcloud compute ssh centos-clean --zone=$ZONE --quiet
 
 ```
 
-```
+```bash
 curl -LO https://raw.githubusercontent.com/AnmolGour09/Configuring-IAM-Permissions-with-gcloud/refs/heads/main/Anmol.sh
 sudo chmod +x Anmol.sh
 ./Anmol.sh
 
 ```
 
-```
+```bash
 
 echo -n "Enter PROJECTID2: "
 read PROJECTID2
