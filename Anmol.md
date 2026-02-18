@@ -1,0 +1,40 @@
+<div align="center">
+
+<h3>🌟 Configuring IAM Permissions with gcloud 🌟</h3>
+
+<div align="center">
+
+```
+export ZONE=$(gcloud compute project-info describe \
+--format="value(commonInstanceMetadata.items[google-compute-default-zone])")
+gcloud compute ssh centos-clean --zone=$ZONE --quiet
+
+```
+
+```
+curl -LO https://raw.githubusercontent.com/AnmolGour09/Configuring-IAM-Permissions-with-gcloud/refs/heads/main/Anmol.sh
+sudo chmod +x Anmol.sh
+./Anmol.sh
+
+```
+
+```
+
+echo -n "Enter PROJECTID2: "
+read PROJECTID2
+if [[ -z "$PROJECTID2" ]]; then
+echo "ERROR: PROJECTID2 cannot be empty"
+exit 1
+fi
+gcloud config set project $PROJECTID2
+gcloud iam service-accounts create instance-admin-sa 
+--display-name "Instance Admin SA" || true
+export SA=instance-admin-sa@$PROJECTID2.iam.gserviceaccount.com
+
+```
+
+<div align="center">
+
+<h3>🌟 Subscribe The Channel Google Cloud With Anmol  🌟</h3>
+
+<div align="center">
