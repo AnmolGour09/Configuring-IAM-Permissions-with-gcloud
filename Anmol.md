@@ -2,7 +2,7 @@
 
 <h3>🌟 Configuring IAM Permissions with gcloud 🌟</h3>
 
-<div align="center">
+</div>
 
 ```
 export ZONE=$(gcloud compute project-info describe \
@@ -37,4 +37,4 @@ export SA=instance-admin-sa@$PROJECTID2.iam.gserviceaccount.com
 
 <h3>🌟 Subscribe The Channel Google Cloud With Anmol  🌟</h3>
 
-<div align="center">
+</div>
